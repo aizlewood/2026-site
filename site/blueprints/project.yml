@@ -1,0 +1,89 @@
+title: Project
+
+pages: false
+files:
+  sortable: true
+
+icon: preview
+
+fields:
+  title:
+    label: Title
+    type: title
+
+  badge:
+    label: Content type badge
+    type: select
+    options:
+      post: Post
+      project: Project
+      product: Product
+      bikes: Bikes
+      leadership: Leadership
+      career: Career
+      fun: Fun
+      coaching: Coaching
+    help: Set a badge to surface this page in the homepage feed. Leave empty to keep it deep-link only.
+
+  feeddate:
+    label: Feed date
+    type: date
+    help: Controls reverse chronological placement in the homepage feed.
+
+  bgcolour:
+    label: Background colour
+    type: text
+    placeholder: Enter a hex value
+    width: 1/4
+
+  lede:
+    label: Lede
+    type: text
+
+  summary:
+    label: Summary
+    type: text
+
+  Sector:
+    label: Sector
+    type: text
+    placeholder: Sector or industry
+    width: 1/4
+
+  coverimage:
+    label: Cover Image
+    type: image
+
+  role:
+    label: Role
+    type: checkboxes
+    options:
+      Visual Design: Visual design
+      Branding: Branding
+      UX: User Experience
+      Front-End: Front-end development
+      Integration: Back-end integration
+      Consulting: Consulting
+
+  with:
+    label: With
+    type: checkboxes
+    options:
+      Clearleft: Clearleft
+      ASquared: ASquared
+      Freelance: Freelance
+      Self: Self
+
+  year:
+    label: Year
+    placeholder: The year the project was finished…
+    type: text
+    width: 1/2
+
+  website:
+    label: Website
+    type: url
+    width: 1/2
+  text:
+    label: Text
+    type: textarea

@@ -1,0 +1,44 @@
+body,
+.header {
+    background: #000;
+}
+
+.projects article  {
+    background: #000;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+p,
+ul,
+li {
+	color: #fff;
+}
+
+.single {
+	border-bottom: 1px solid #000;
+}
+
+a:link {
+	color: #dc3f3d;
+}
+
+a:visited {
+	color: #02AEF0;
+}
+
+a:hover {
+	color: #f5c875;
+}
+
+a:active {
+	color: #02AEF0;
+}
+
+p.callout {
+	background: #CA2549;
+	color: #fff;
+}

@@ -1,0 +1,70 @@
+title: Site
+
+pages: true
+
+template:
+  - default
+  - blog
+  - bike
+  - home
+  - full-width
+  - books
+  - services
+  - project
+  - about
+  - feed
+
+fields:
+  title:
+    label: Title
+    type: text
+
+  author:
+    label: Author
+    type: text
+
+  description:
+    label: Description
+    type: textarea
+
+  footer:
+    label: Footer Text
+    type: textarea
+
+  copyright:
+    label: Copyright
+    type: textarea
+
+  navigationtype:
+    label: Navigation Type
+    type: radio
+    default: navoffcanvas
+    options:
+      navoffcanvas: Off-Canvas
+      navstandard: Standard
+
+  badges:
+    label: Badge registry
+    type: structure
+    style: table
+    fields:
+      slug:
+        label: Slug
+        type: text
+        help: Lowercase key used in content files and CSS, for example post or coaching.
+      label:
+        label: Label
+        type: text
+      palette:
+        label: Palette
+        type: select
+        options:
+          amber: Amber
+          mint: Mint
+          sky: Sky
+          indigo: Indigo
+          violet: Violet
+          pink: Pink
+          rose: Rose
+          yellow: Yellow
+          neutral: Neutral

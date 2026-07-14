@@ -1,0 +1,59 @@
+Title: Internet marketing ideas that won’t break the bank
+
+----
+
+Date: 2008-10-01
+
+----
+
+Text: 
+
+Although as a whole online marketing is one of the most cost-effective marketing channels out there, some online marketing methods can still eat into a yearly budget faster than you can say 'Google'.
+
+Take PPC (pay-per-click) for example.  According to MarketingSherpa, US SEM spend is expected to hit $16.5 billion by the end of 2008, with Google accounting for 71% of all US search traffic (74% for the UK).  Add to this the news of <a href="http://www.google.co.uk/search?q=google+yahoo+deal">Google's recent deal with Yahoo</a>, and the search engine marketing landscape (with paid ads in particular) is shrinking.  With less competition, we're witnessing the formation of a quasi-monopoly that can only drive keywords costs up.  As a cost-aware marketer, you'll still have to rely on the long-tail keywords to maximize conversions, but you won't be able to avoid some competition over pricey keywords and your online budget will take a hit.
+
+However, the true beauty of online marketing is the multitude of choices available that are either cheap or free.  In this time of impending economic doom and gloom, below is a list of various marketing tactics you can do that won't break the bank… and if anything they'll only add to it.
+
+<ul>
+	<li class="content"><strong>SEO</strong> is a great, cheap and long-term strategy to drive qualified traffic to your site.  Start with the end in mind by making a highly relevant, tiered keyword list that you'll use as your bible for all future web dev work and content creation.  Aim to end up with a tiered list of core, head keywords followed by secondary and tertiary keywords that make up your long-tail.  SEO might be a long-term method, but a very effective one.  It can drive perhaps the most qualified, cheapest traffic to your site for an amount of work that would pale in comparison.</li>
+	<li class="content">Create and submit your <strong>sitemap </strong>to Google.  There's a <a href="http://wordpress.org/extend/plugins/google-sitemap-generator/">Wordpress plugin</a> that does this for you, and doing so ensures your new site content gets spidered ASAP, rather than the weeks or months it might take otherwise.</li>
+	<li class="content">Use <a href="http://www.google.com/analytics"><strong>Google Analytics</strong></a> or similar (free) website analytics program.  Knowing where your customers are coming from, how they're getting there, what pages frequent vs. those they don't is invaluable to making the right business decisions and generating revenue.</li>
+	<li class="content">More free analytics tools:  try <a href="http://www.crazyegg.com"><strong>CrazyEgg's free trial</strong></a> – a fantastic heat-mapping app that lets you see exactly where on any given page your visitors are clicking, and where exactly those clicks are coming from.</li>
+	<li class="content">Check out <a href="https://www.google.com/adplanner">Google's <strong>Ad Planner</strong></a>, even if you don't intend (or can't afford) to buy traditional online media.  Google's free tool lets you identify sites for targeting with either online media or their own content network via placement targeting, but you don't have to use it for exactly that.  Instead use the tool to export a targeted list of sites you feel offer opportunities for a link exchange, banner exchange, newsletter co-registration, or just sites to keep an eye on.</li>
+	<li class="content"><strong>Check your keywords</strong> using tools such as <a href="http://www.google.com/insights/search/">Google's Insight</a>, <a href="https://adwords.google.com/select/KeywordToolExternal">Adwords keyword/traffic estimator</a> and <a href="http://www.wordtracker.com">Wordtracker</a> to ensure you're covering all the possible keywords related to your business.  Keep adding to your tiered keyword list, and keep adding new, fresh, keyword-rich content to your site.</li>
+	<li class="content">Make <strong>friendly links</strong> for all of your content.  Doing so makes your site more indexable by robots and more scannable by humans when they're viewing a SERP.  Permalinks than use '?p=1283' are likely to lose potential traffic compared to those that use descriptive links such as 'gardening/tools/shovel.aspx'</li>
+	<li class="content">Add a '<strong>subscribe now</strong>' field to your website along with a sample of your newsletter.  Take the time to make your newsletter design, content and angle unique enough to entice new subscribers. The communication channel you open with new or potential customers is hugely important, and by nurturing this relationship properly using email marketing, you can drive huge revenue with very little upfront costs (remember, an email campaign costs just pennies to send). Once you're using email marketing, <a href="http://www.carbongraffiti.com/notebook/2008/09/17/10-ways-to-show-customers-love-with-email-marketing/">make sure you're telling your customers you love them</a>.</li>
+	<li class="content">Talking about subscriptions, be sure to include an <strong>RSS feed</strong> icon on your company's blog and/or corporate website.  Whereas email uses a 'push' method versus RSS's 'pull' method, both do the leg work for you by bringing interested, qualified visitors to your site.  By displaying your recent updates in your visitor's RSS reader, they'll come to you without you spending a thing!</li>
+	<li class="content"><strong>Bonus</strong>: Add the 'subscribe now' field to your blog, next to your RSS feed. Give your visitors every choice to keep the conversation going.</li>
+	<li class="content"><strong>Create a blog</strong>, using a hosted version (such as <a href="http://www.wordpress.com">Wordpress.com</a>) or a self-hosted one (such as <a href="http://www.wordpress.org">Wordpress.org</a>).  The power of blogs these days can't be overlooked; they're a great way to generate fresh, keyword-rich content for SEO, and they can do wonders for building online relationships and customer loyalty.  Basically, blogs (specifically self-hosted versions like Wordpress.org) can do a lot of things a flat site can't.  As proof, take a look at <a href="http://www.carbongraffiti.com/notebook/2008/08/12/marketing-wordpress-15-top-wordpress-plugins/">my recent article on the top 15 Wordpress plugins for your online marketing needs</a>.</li>
+	<li class="content">Although cliché, becoming a '<strong>thought leader</strong>' is a valid method if you're truly the best person to speak to concerning your product or service. Let your target market know that you know what you're talking about.  Evangelize your product or the community through your blog, and have the community disseminate your information in their own way.  Best of all, it's free, or at least puts the years of experience you have to some good use.</li>
+	<li class="content">Create a <a href="http://new.facebook.com"><strong>Facebook </strong></a>page for your company, and start with your peers and close customers to get the ball rolling.  Once the momentum grows, you'll get more fans, and more recognition of your brand. All for free.</li>
+	<li class="content">Create a <a href="http://www.twitter.com"><strong>Twitter </strong></a>account for your company, and give the real deal on your company's happenings and internal machinations (something you should already be doing on your blog).  Don't worry, everyone's doing it, and the more transparent you are, the more appreciative your customers will be.</li>
+	<li class="content">Create a dialogue with your potential customer base by '<strong>fishing where the fish are</strong>'.  Comment and interact in places you know your audience frequents such as forums, other blogs, and review sites.  Stay above board, transparent, and make it clear who you are, and provide linkage back to your site for free, qualified traffic.</li>
+	<li class="content">One of the most over-looked methods of increasing sales for cheap is right under your nose.   Your website might work, but how well? Sign up for <a href="http://www.google.com/websiteoptimizer"><strong>Google's website optimize</strong>r</a> and start testing your core, converting pages for the best combination.  You'll be amazed at how much impact the placement of your 'hero shot' can make.</li>
+	<li class="content">Frequent sites that you feel offer high-value, neutral content? Offer a <strong>link exchange</strong> with them.  A win-win situation, link exchanges help to drive traffic either straight from the other site as well as increasing your 'Google juice'.</li>
+	<li class="content">Be sure to add your site to all of the appropriate <strong>web directories</strong>, and under the appropriate sections.  <a href="http://www.dmoz.org">DMOZ </a>still represents the largest web directory, and it's always a good starting point.  Another is <a href="http://dir.yahoo.com">Yahoo's directory</a>.</li>
+	<li class="content">Get your site visitors or customers involved – ask them for their opinions, get them talking, and have a pen &amp; paper handy.  By <strong>engaging your customers</strong> (using an online survey, telephone interview, or other) in an open and friendly way you can get priceless feedback about your product that you'd have to pay thousands for from a consultancy.</li>
+	<li class="content">Although potentially not free, it's still cheap to <strong>podcast or vlog</strong>.  All you need is a microphone and/or a video camera.  There are tons of podcasting platforms out there, and <a href="http://www.youtube.com">YouTube </a>remains the best free video platform out there.  Also take a look at <a href="http://www.vimeo.com">Vimeo</a> and <a href="http://www.seesmic.com">Seesmic</a>.</li>
+	<li class="content">Go <strong>OFFLINE</strong>!  Be sure to include your website, blog and social media addresses on your business cards or outbound collateral.  <a href="http://www.moo.com">Check out moocards</a> for a great business card service that's highly affordable and super easy to use.</li>
+	<li class="content"><strong>Email signatures</strong> are often overlooked.  Often more applicable in a B2B setting, email sigs represent another free way to help drive traffic to your site.  Check out <a href="http://www.feedburner.com">Feedburner's 'publicize' option</a> for creating an email signature that auto-updates with your recent blog entries.</li>
+	<li class="content">Go viral by making sure there's a '<strong>forward to a friend</strong>' link on all of your pages.  When someone reads or finds something they like online, chances are they know someone else who can benefit from the same info.  Give them the opportunity to send it right along as quickly and painlessly as possible and let them kindly do the work for you.</li>
+	<li class="content">Go social by adding a <strong>social bookmark</strong> utility to your pages.  '<a href="http://www.addthis.com">Addthis</a>' is a great free app that lets your visitors add your content to their favourite social bookmarking service.  What's more, AddThis also includes the 'forward to a friend' function as described above.</li>
+	<li class="content">Assuming you're showing up fine in Google for your 'head' terms – often those keywords directly related to your brand name – but not so for your more specific, longtail terms, don't worry.  Longtail terms statistically show a higher conversion rate, and therefore a prime use for <strong>PPC</strong>.  Although not free, bidding on the most effective long-tail terms for your business can generate huge ROI.</li>
+</ul>
+
+----
+
+Tags: Best of,Email Marketing,General,google,Online Marketing,quick tips
+
+----
+
+Categories: Best of,Email Marketing,General,google,Online Marketing,quick tips
+
+----
+
+Badge: post
+
+----
+
+Feeddate: 2008-10-01

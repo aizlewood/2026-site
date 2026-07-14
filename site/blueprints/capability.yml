@@ -1,0 +1,36 @@
+title: Capability
+
+pages: false
+
+files:
+  sortable: true
+
+icon: puzzle-piece
+
+fields:
+  title:
+    label: Title
+    type: title
+
+  badge:
+    label: Content type badge
+    type: select
+    options:
+      post: Post
+      project: Project
+      product: Product
+      bikes: Bikes
+      leadership: Leadership
+      career: Career
+      fun: Fun
+      coaching: Coaching
+    help: Set a badge to surface this page in the homepage feed. Leave empty to keep it deep-link only.
+
+  feeddate:
+    label: Feed date
+    type: date
+    help: Controls reverse chronological placement in the homepage feed.
+
+  text:
+    label: Capability description
+    type: textarea

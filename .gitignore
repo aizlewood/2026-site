@@ -1,0 +1,56 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Local/editor/runtime files
+# --------------------------
+
+.codex/
+backup/
+node_modules/
+/info.php
+
+# Local stylesheet restore points
+/assets/css/*backup*.css
+/assets/css/*before*.css
+/assets/css/* copy.css
+
+# Temporary files
+# ---------------
+
+/thumbs/*
+!/thumbs/index.html
+
+/media/*
+!/media/index.html
+
+/site/cache/*
+!/site/cache/index.html
+
+/site/sessions/*
+!/site/sessions/index.html
+
+/site/logs/*
+!/site/logs/index.html
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Local config contains license keys and environment-specific settings
+/site/config/config.php
+!/site/config/config.example.php
+
+# Kirby accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Avatars
+# ---------------
+
+/assets/avatars/*
+!/assets/avatars/index.html

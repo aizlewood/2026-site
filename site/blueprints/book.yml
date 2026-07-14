@@ -1,0 +1,55 @@
+title: Book
+
+pages: false
+files:
+  sortable: true
+
+icon: copy
+
+fields:
+  title:
+    label: Book title
+    type: title
+
+  badge:
+    label: Content type badge
+    type: select
+    options:
+      post: Post
+      project: Project
+      product: Product
+      bikes: Bikes
+      leadership: Leadership
+      career: Career
+      fun: Fun
+      coaching: Coaching
+    help: Set a badge to surface this page in the homepage feed. Leave empty to keep it deep-link only.
+
+  feeddate:
+    label: Feed date
+    type: date
+    help: Controls reverse chronological placement in the homepage feed.
+
+  recommended:
+    label: Recommended?
+    type: radio
+    default: false
+    options:
+      Recommended: Affirmative
+      Neutral: Neutral
+
+  author:
+    label: Author
+    type: text
+    required: true
+
+  bookimage:
+    label: Select an Image
+    type: select
+    options: images
+
+  link:
+    label: Link to book
+    type: url
+    required: false
+    width: 1/2

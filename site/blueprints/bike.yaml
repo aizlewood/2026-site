@@ -1,0 +1,131 @@
+title: Bike
+
+pages: false
+files:
+  sortable: true
+
+icon: heart
+
+fields:
+  title:
+    label: Title
+    type: text
+
+  badge:
+    label: Content type badge
+    type: select
+    options:
+      post: Post
+      project: Project
+      product: Product
+      bikes: Bikes
+      leadership: Leadership
+      career: Career
+      fun: Fun
+      coaching: Coaching
+    help: Set a badge to surface this page in the homepage feed. Leave empty to keep it deep-link only.
+
+  feeddate:
+    label: Feed date
+    type: date
+    help: Controls reverse chronological placement in the homepage feed.
+
+  text:
+    label: Text
+    type: textarea
+
+  tags:
+    label: Tags
+    type: tags
+
+  frame:
+    label: Frame
+    type: text
+
+  fork:
+    label: Fork
+    type: text
+
+  wheels:
+    label: wheels
+    type: text
+
+  tyres:
+    label: tyres
+    type: text
+
+  rotors:
+    label: rotors
+    type: text
+
+  shifters:
+    label: shifters
+    type: text
+
+  rearmech:
+    label: rear mech
+    type: text
+
+  frontmech:
+    label: front mech
+    type: text
+
+  crank:
+    label: crank
+    type: text
+
+  bottombracket:
+    label: bottom bracket
+    type: text
+
+  cassette:
+    label: cassette
+    type: text
+
+  chain:
+    label: chain
+    type: text
+
+  saddle:
+    label: saddle
+    type: text
+
+  seatpost:
+    label: seat post
+    type: text
+
+  handlebar:
+    label: handlebar
+    type: text
+
+  grips:
+    label: grips or bartape
+    type: text
+
+  stem:
+    label: stem
+    type: text
+
+  headset:
+    label: headset
+    type: text
+
+  brakes:
+    label: brakes
+    type: text
+
+  pedals:
+    label: pedals
+    type: text
+
+  size:
+    label: size
+    type: text
+
+  weight:
+    label: weight
+    type: text
+
+  misc:
+    label: misc
+    type: text
