@@ -44,7 +44,7 @@ $renderColumn = function($field, $page) {
   <?php if($asideHasContent): ?>
     <aside class="<?= html($asideClasses) ?>"<?php if($asideLabel !== ''): ?> aria-label="<?= html($asideLabel) ?>"<?php endif ?>>
       <?php if($asideBrandSrc !== ''): ?>
-        <strong class="current-status__brand"><img src="<?= html($asideBrandSrc) ?>" alt="<?= html($asideBrandAlt) ?>" width="50%" height=""></strong>
+        <strong class="current-status__brand"><img src="<?= html($asideBrandSrc) ?>" alt="<?= html($asideBrandAlt) ?>" loading="lazy" decoding="async"></strong>
       <?php endif ?>
       <?= $renderColumn($aside, $page) ?>
     </aside>

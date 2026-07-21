@@ -13,11 +13,21 @@
       <li class="about-clients__item">
         <?php if($url !== ''): ?>
           <a href="<?= html($url) ?>" class="about-clients__link" target="_blank" rel="noopener">
-            <img src="<?= $logo->url() ?>" alt="<?= $name ?>" loading="lazy" decoding="async">
+            <?php snippet('responsive-image', array(
+              'image' => $logo,
+              'alt' => $name,
+              'sizes' => '10rem',
+              'widths' => array(160, 320)
+            )) ?>
           </a>
         <?php else: ?>
           <span class="about-clients__link">
-            <img src="<?= $logo->url() ?>" alt="<?= $name ?>" loading="lazy" decoding="async">
+            <?php snippet('responsive-image', array(
+              'image' => $logo,
+              'alt' => $name,
+              'sizes' => '10rem',
+              'widths' => array(160, 320)
+            )) ?>
           </span>
         <?php endif ?>
       </li>

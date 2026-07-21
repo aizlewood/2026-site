@@ -22,6 +22,10 @@
     </div>
   </div>
 </footer>
-<script src="<?= url('assets/js/site-2026.js') ?>"></script>
+<?php
+$scriptPath = kirby()->roots()->assets() . DS . 'js' . DS . 'site-2026.js';
+$scriptVersion = is_file($scriptPath) ? filemtime($scriptPath) : time();
+?>
+<script src="<?= url('assets/js/site-2026.js') ?>?v=<?= $scriptVersion ?>" defer></script>
 </body>
 </html>

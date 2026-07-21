@@ -23,8 +23,6 @@
     </article>
 </div>
 
-<hr class="measure-rule" />
-
 <section class="wrap-fluid blog-index">
 <?php if(param('tag')): ?>
     <?php snippet('tag-listing-no-tags') ?>

@@ -4,9 +4,9 @@ Title: My Why
 
 Intro: 
 
-Since 2003 I’ve worked at the intersection between product design, UX and engineering. Design is a powerful driver of change, and I focus on applying it to meaningful challenges… from sustainability to using business and tech for good.
+With 20 years’ experience spanning digital, design, UX, strategy and agency leadership, I’ve had the pleasure of working with start-ups, FTSE 100s and charities to deliver impactful products and high-performing teams. I bring a blend of creative and commercial acumen to help organisations solve complex problems and scale with clarity and purpose.
 
-With 20+ years’ experience spanning digital, design, UX, strategy and agency leadership I’ve worked with start-ups, FTSE 100s and charities to deliver impactful products and high-performing teams. I bring a blend of creative and commercial acumen to help organisations solve complex problems and scale with clarity and purpose.
+(image: 20161024-leading-design-james-gilyead-3108-copy.jpg class:breakout)
 
 Growing up alongside the internet, I began in digital marketing just as Hotmail and Google were emerging. The AI boom is yet another wave of technology that I’m adapting to and embracing.
 
@@ -55,7 +55,8 @@ Away from work I ride bikes 🚲 up on the South Downs and live by the seaside �
 
 I'm Canadian 🇨🇦 by birth, English 🇬🇧 by heritage, and I like making my kids’ lunches a bit more fun.
 
-📷 Check out [@alpaca_lunchnote](https://www.instagram.com/alpaca_lunchnote/) on Instagram.
+(image: fullsizerender.jpg class: half caption: ©Mackenzie Aizlewood)
+(image: alpaca.jpg class: half last caption: (https://www.instagram.com/alpaca_lunchnote/)
 
 ----
 

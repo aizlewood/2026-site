@@ -12,6 +12,8 @@ c::set('markdown.breaks', true);
 c::set('rewrite', true);
 c::set('timezone', 'GMT');
 c::set('debug', false);
+c::set('thumbs.quality', 82);
+c::set('thumbs.interlace', true);
 
 if (isset($_SERVER['HTTP_HOST'])) {
   $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';

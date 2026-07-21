@@ -16,7 +16,14 @@
 
         <?php if($image = $page->image()): ?>
         <figure class="full-bleed">
-            <img class="" src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" decoding="async">
+            <?php snippet('responsive-image', array(
+              'image' => $image,
+              'alt' => $page->title()->html(),
+              'loading' => 'eager',
+              'fetchpriority' => 'high',
+              'sizes' => '100vw',
+              'widths' => array(640, 960, 1280, 1600, 2000)
+            )) ?>
         </figure>
         <?php endif ?>        
 

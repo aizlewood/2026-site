@@ -10,4 +10,4 @@ Feeddate:
 
 ----
 
-Text: A selection of not quite case studies, but more than a blurb.
+Text: Mini-case studies and snippets around my leadership capabilities & strengths.

@@ -20,7 +20,12 @@
           <div class="subitem">
             <?php if($image = $subitem->image()): ?>
               <figure>
-                <img src="<?= $subitem->image()->url() ?>" alt="<?= $subitem->title()->html() ?>" loading="lazy" decoding="async" />
+                <?php snippet('responsive-image', array(
+                  'image' => $image,
+                  'alt' => $subitem->title()->html(),
+                  'sizes' => '(min-width: 64rem) 33vw, 100vw',
+                  'widths' => array(320, 640, 960)
+                )) ?>
               </figure>
               <?php endif; ?>
               <h4><?= $subitem->title()->html() ?></h4>

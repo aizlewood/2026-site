@@ -2,13 +2,23 @@
 
 <div class="wrap-fluid">
 
+      <a class="project-back" href="<?= url('did') ?>">&larr; All Work</a>
+      <hr class="measure-rule project-nav-separator" />
+
     <article class="content-page">
 
         <header>
             <h1><?= $page->title()->html() ?></h1>
         </header>
 
-        <?php snippet('entry-meta', array('page' => $page, 'showBadge' => true, 'showDate' => true)); ?>
+    </article>      
+
+</div>    
+<div class="wrap-full">
+
+    <article class="content-page">
+
+        <?php snippet('entry-meta', array('page' => $page, 'showBadge' => false, 'showDate' => false)); ?>
 
         <div class="text">
             <?= function_exists('render_rich_text') ? render_rich_text($page->text(), $page) : $page->text()->kirbytext() ?>
@@ -16,7 +26,6 @@
 
     </article>
 </div>
-
 
 
 <div class="wrap-full">
@@ -47,19 +56,6 @@
             <?= function_exists('render_rich_text') ? render_rich_text($page->text2(), $page) : $page->text2()->kirbytext() ?>
         </div>
 
-    <hr class="measure-rule" />
-    </article>
-</div>
-
-
-<div class="wrap-fluid">
-
-    <article class="article index">
-
-
-    <?php snippet('next-page') ?>
-
-    <hr class="measure-rule" />
     </article>
 </div>
 

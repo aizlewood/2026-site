@@ -30,18 +30,27 @@
             if(!$coverImage && $book->image()) {
               $coverImage = $book->image();
             }
-            $coverUrl = $coverImage ? $coverImage->url() : '';
           ?>
           <?php $bookLink = trim($book->link()->value()); ?>
           <li class="reads-card read-card">
-              <?php if($coverUrl !== ''): ?>
+              <?php if($coverImage): ?>
               <figure class="reads-cover read-card__cover">
                 <?php if($bookLink !== ''): ?>
                 <a href="<?= html($bookLink) ?>" class="reads-cover-link">
-                  <img src="<?= html($coverUrl) ?>" alt="<?= $book->title()->html() ?>" loading="lazy" decoding="async" />
+                  <?php snippet('responsive-image', array(
+                    'image' => $coverImage,
+                    'alt' => $book->title()->html(),
+                    'sizes' => '(min-width: 64rem) 14rem, 45vw',
+                    'widths' => array(180, 280, 420, 560)
+                  )) ?>
                 </a>
                 <?php else: ?>
-                  <img src="<?= html($coverUrl) ?>" alt="<?= $book->title()->html() ?>" loading="lazy" decoding="async" />
+                  <?php snippet('responsive-image', array(
+                    'image' => $coverImage,
+                    'alt' => $book->title()->html(),
+                    'sizes' => '(min-width: 64rem) 14rem, 45vw',
+                    'widths' => array(180, 280, 420, 560)
+                  )) ?>
                 <?php endif ?>
               </figure>
               <?php endif ?>

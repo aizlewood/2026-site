@@ -45,6 +45,46 @@
             <?= function_exists('render_rich_text') ? render_rich_text($page->text(), $page) : $page->text()->kirbytext() ?>
         </div>
 
+        <section class="client-logos" aria-label="Selected organisations">
+          <?php foreach([
+            ['3M.svg', '3M'],
+            ['asquared.svg', 'ASquared'],
+            ['bbc.svg', 'BBC'],
+            ['bc.svg', 'Brighton College'],
+            ['bhcc.svg', 'Brighton & Hove City Council'],
+            ['bing.svg', 'Bing'],
+            ['bnb.svg', 'Butternut Box'],
+            ['clearleft.svg', 'Clearleft'],
+            ['codeforamerica.svg', 'Code for America'],
+            ['ing.svg', 'ING Direct'],
+            ['jpmc.svg', 'JP Morgan Chase'],
+            ['lmr.svg', 'Link My Ride'],
+            ['nbcu.svg', 'NBCUniversal'],
+            ['nhm.svg', 'Natural History Museum'],
+            ['nordea.svg', 'Nordea'],
+            ['pearson.svg', 'Pearson'],
+            ['prh.svg', 'Penguin Random House'],
+            ['rsa.svg', 'RSA Insurance'],
+            ['sage.svg', 'Sage'],
+            ['skiddle.svg', 'Skiddle'],
+            ['surfers.svg', 'Surfers against Sewage'],
+            ['time.svg', 'Time'],
+            ['virgin-galactic.svg', 'Virgin Galactic'],
+            ['virginatlantic.svg', 'Virgin Atlantic Holidays'],
+          ] as [$filename, $name]): ?>
+            <?php if($logo = $page->image($filename)): ?>
+              <div class="client-logo">
+                <?php snippet('responsive-image', array(
+                  'image' => $logo,
+                  'alt' => $name,
+                  'sizes' => '8rem',
+                  'widths' => array(160, 320)
+                )) ?>
+              </div>
+            <?php endif ?>
+          <?php endforeach ?>
+        </section>
+    <a class="button" href="<?= url('did') ?>">Selected experience →</a>
     </article>
 
 </div>
@@ -109,12 +149,6 @@
         </div>
 
     </article>
-
-    <hr class="measure-rule" />
-
-      <?php snippet('blog-next-prev', ['flip' => true]) ?>
-
-    <hr class="measure-rule" />
 </div>
 
 <?php snippet('footer') ?>

@@ -22,7 +22,12 @@
       <article class="bike-card">
         <?php if($image = $subitem->image()): ?>
           <a class="bike-card__media" href="<?= $subitem->url() ?>">
-            <img src="<?= $image->url() ?>" alt="<?= $subitem->title()->html() ?>" loading="lazy" decoding="async" />
+            <?php snippet('responsive-image', array(
+              'image' => $image,
+              'alt' => $subitem->title()->html(),
+              'sizes' => '(min-width: 64rem) 33vw, 100vw',
+              'widths' => array(320, 640, 960)
+            )) ?>
           </a>
         <?php endif; ?>
         <div class="bike-card__body">

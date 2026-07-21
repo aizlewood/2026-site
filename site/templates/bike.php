@@ -15,7 +15,15 @@
       <?php if($image = $page->image()): ?>
         <figure class="bike-hero">
           <a class="bike-hero-link" href="<?= $image->url() ?>">
-            <img class="bike" src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" loading="eager" decoding="async" />
+            <?php snippet('responsive-image', array(
+              'image' => $image,
+              'alt' => $page->title()->html(),
+              'class' => 'bike',
+              'loading' => 'eager',
+              'fetchpriority' => 'high',
+              'sizes' => '(min-width: 72rem) 72rem, 100vw',
+              'widths' => array(640, 960, 1280, 1600, 2000)
+            )) ?>
           </a>
         </figure>
       <?php endif ?>

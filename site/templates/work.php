@@ -27,12 +27,4 @@
     </article>
 </div>
 
-<div class="wrap-fluid">
-<hr class="measure-rule" />
-
-    <?php snippet('blog-next-prev', ['flip' => true]) ?>
-
-<hr class="measure-rule" />
-</div>
-
 <?php snippet('footer') ?>

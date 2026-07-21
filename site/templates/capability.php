@@ -15,7 +15,15 @@
 
         <?php if($image = $page->image()): ?>
         <figure class="capability-page__media">
-            <img class="capability-page__image" src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" decoding="async">
+            <?php snippet('responsive-image', array(
+              'image' => $image,
+              'alt' => $page->title()->html(),
+              'class' => 'capability-page__image',
+              'loading' => 'eager',
+              'fetchpriority' => 'high',
+              'sizes' => '(min-width: 72rem) 72rem, 100vw',
+              'widths' => array(640, 960, 1280, 1600)
+            )) ?>
         </figure>
         <?php endif ?>
 

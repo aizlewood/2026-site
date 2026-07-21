@@ -1,4 +1,8 @@
 <!doctype html>
+<?php
+$stylesheetPath = kirby()->roots()->assets() . DS . 'css' . DS . 'site-2026-rebuild.css';
+$stylesheetVersion = is_file($stylesheetPath) ? filemtime($stylesheetPath) : time();
+?>
 <html lang="<?= $site->language() ? $site->language()->code() : 'en' ?>">
 <head>
   <meta charset="utf-8">
@@ -13,12 +17,12 @@
         font-family: 'Cabinet';
         src: url('<?= url('assets/fonts/CabinetGrotesk-Variable.woff2') ?>') format('woff2');
         font-weight: 100 900;
-        font-display: block;
+        font-display: swap;
         font-style: normal;
       }
     </style>  
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="<?= url('assets/css/site-2026-rebuild.css') ?>">
+  <link rel="stylesheet" href="<?= url('assets/css/site-2026-rebuild.css') ?>?v=<?= $stylesheetVersion ?>">
 </head>
 <body id="canvas" class="<?= $page->isHomePage() ? 'is-home' : 'is-subpage' ?> template-<?= $page->template() ?>">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -32,7 +36,7 @@
     </div>
     <h1 class="hero__headline">I help teams build clear, usable digital products, and grow the design capability needed to sustain them.</h1>
       <div class="hero__more">
-        <img src="<?= url('assets/images/jra-avatar-sm.jpg') ?>" alt="" loading="lazy">
+        <img src="<?= url('assets/images/jra-avatar-sm.jpg') ?>" alt="" width="150" height="150" loading="lazy" decoding="async">
         <a href="<?= url('is') ?>" data-hover-tone="identity">Who I am</a>
         <span>&</span>
         <a href="<?= url('does') ?>" data-hover-tone="work">What I do</a>

@@ -15,7 +15,14 @@
   <article class="book-detail">
     <?php if($coverImage): ?>
       <figure class="book-detail__cover">
-        <img src="<?= $coverImage->url() ?>" alt="<?= $page->title()->html() ?>" loading="eager" decoding="async">
+        <?php snippet('responsive-image', array(
+          'image' => $coverImage,
+          'alt' => $page->title()->html(),
+          'loading' => 'eager',
+          'fetchpriority' => 'high',
+          'sizes' => '(min-width: 48rem) 18rem, 55vw',
+          'widths' => array(240, 360, 480, 640)
+        )) ?>
       </figure>
     <?php endif ?>
 
