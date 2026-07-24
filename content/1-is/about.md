@@ -6,7 +6,7 @@ Intro:
 
 With 20 years’ experience spanning digital, design, UX, strategy and agency leadership, I’ve had the pleasure of working with start-ups, FTSE 100s and charities to deliver impactful products and high-performing teams. I bring a blend of creative and commercial acumen to help organisations solve complex problems and scale with clarity and purpose.
 
-(image: 20161024-leading-design-james-gilyead-3108-copy.jpg class:breakout)
+(image: proshot-ja.jpg class:breakout)
 
 Growing up alongside the internet, I began in digital marketing just as Hotmail and Google were emerging. The AI boom is yet another wave of technology that I’m adapting to and embracing.
 
@@ -23,37 +23,42 @@ Status: I currently lead a (link: https://asquared.uk text: venture product stud
 Profile-left: 
 
 ##What I do
-Product design works best when it is treated as a leadership discipline, not a service.
-I bring clarity to complex problems and turn ambiguity into confident decisions and shipped outcomes.
+I’m a problem solver first and foremost. Backed by a long history in agency I bring clarity, focus and guile to complex problems. 
 
-I typically focus on:
-- Product direction and discovery
-- Design quality, standards, and systems
-- Cross-functional collaboration with Product and Engineering
-- Coaching designers and design leaders
+I’m currently the MD of (link: https://asquared.uk text: ASquared), a B Corp venture product studio in Brighton, UK. Through product thinking, user-centred design and AI-enabled engineering we bring startup products to market and help secure their seed investments, often taking a small equity in the process. 
 
-I have repeatedly been brought into environments where product direction was unclear or quality needed strengthening.
+Before ASquared I was the Design Director and sitting board member at (link: https://clearleft.com text: Clearleft), one of the UK’s foremost strategic UX and design agencies. I helped redefine the proposition, positioning and delivery of the award-winning agency’s services, and successfully steered the agency through COVID. 
+
+Prior to my leadership roles I’ve led and worked on countless projects and engagements ranging from **RSA Insurance** and **Nordea Bank** to **Virgin Atlantic Holidays**, **Pearson Education** and many more. 
+
+I’ve spoken internationally, have written for various online and print publications, and been cited in books on design and industry best practices.
 
 ----
 
 Profile-right: 
 
-##Specialisms
-I specialise in creating standards and systems that raise the bar without slowing teams down, and building strong working relationships that produce repeatable results.
+##My core principles
+My work has ranged from UX & design on large-scale digital transformation projects to consultancy for innovative startups and supporting and managing cross-functional teams. 
 
-A big part of my role has been supporting and coaching multidisciplinary teams as they grow, often in challenging, fast-paced or changing environments.
+Whatever the environment, I always come back to these core working principles: 
 
-I’m known for a calm, pragmatic, servant-leader approach that helps maintain quality and momentum when things get tough.
+* Communication and collaboration beat craft
+* Systems and standards are nothing without understanding
+* Design is a lens, not the centre
+* Ideas are cheap; execution is the moat
+* Everyone is winging it
 
 ----
 
 Outside: 
 
-## Outside of work
+## Away from the keyboard
 
-Away from work I ride bikes 🚲 up on the South Downs and live by the seaside 🌊, where I'm husband to a wonderful wife and father to two incredible girls.
+Outside of work I ride bikes 🚲 up on the South Downs and live by the seaside 🌊 with my wonderful wife and two incredible daughters.
 
-I'm Canadian 🇨🇦 by birth, English 🇬🇧 by heritage, and I like making my kids’ lunches a bit more fun.
+I'm Canadian 🇨🇦 by birth, English 🇬🇧 by heritage. Yes, I have a weird accent. I call it *transatlantic*.
+
+In 2023—burnt out by COVID—we packed up our things, sold most of our stuff and deregistered our kids out of school to travel (most of) the world. My girls saw things in real life that their peers were seeing in text books. It remains one of the best things we’ve ever done. (link: /writes/family-adventure-sabbatical-data-viz text: Read more and see the data viz here).
 
 (image: fullsizerender.jpg class: half caption: ©Mackenzie Aizlewood)
 (image: alpaca.jpg class: half last caption: (https://www.instagram.com/alpaca_lunchnote/)

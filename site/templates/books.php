@@ -9,7 +9,7 @@
             <h1><?= $page->title()->html() ?></h1>
         </header>
 
-        <?php snippet('entry-meta', array('page' => $page, 'showBadge' => true, 'showDate' => true)); ?>
+        <?php snippet('entry-meta', array('page' => $page, 'showBadge' => false, 'showDate' => false)); ?>
 
         <div class="text">
             <?= function_exists('render_rich_text') ? render_rich_text($page->text(), $page) : $page->text()->kirbytext() ?>
@@ -64,11 +64,6 @@
       <?php endif ?>
     </section>
 
-    <hr class="measure-rule" />
-
-    <?php snippet('next-page') ?>
-
-    <hr class="measure-rule" />
 </div>
 
 <?php snippet('footer') ?>

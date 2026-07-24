@@ -4,8 +4,8 @@
 <footer class="footer-band">
   <div class="wrap-fluid">
     <div class="cta" aria-label="Site note">
-      <span class="cta__logo"><?php snippet('logo') ?></span>
-      <p>Made with ❤️ and ☕️ (and 🚫🤖) in the South Downs, Sussex-by-the-sea 🌊.</p>
+      <span class="cta__logo"><img src="<?= url('assets/images/jra-avatar.png') ?>"></span>
+      <p><strong>Jon Aizlewood</strong><br>Made with ❤️, ⏳, ☕️ and a bit of 🤖 in the South Downs, Sussex-by-the-sea 🌊.</p>
     </div>
 
     <div class="footer">

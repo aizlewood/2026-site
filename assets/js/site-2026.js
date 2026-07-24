@@ -99,3 +99,90 @@
     updateControls();
   });
 })();
+
+(function () {
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reducedMotion.matches) return;
+
+  var logos = Array.prototype.slice.call(document.querySelectorAll('.hero__logo, .header-logo, .cta__logo'));
+  if (!logos.length) return;
+
+  function setLogoVars(logo, x, y, active) {
+    logo.style.setProperty('--logo-x', x.toFixed(2) + 'px');
+    logo.style.setProperty('--logo-y', y.toFixed(2) + 'px');
+    logo.style.setProperty('--logo-tilt', (x * 0.28).toFixed(2) + 'deg');
+    logo.style.setProperty('--logo-fill-x', (x * 0.16).toFixed(2) + 'px');
+    logo.style.setProperty('--logo-fill-y', (y * 0.16).toFixed(2) + 'px');
+    logo.style.setProperty('--logo-outline-x', (x * -0.13).toFixed(2) + 'px');
+    logo.style.setProperty('--logo-outline-y', (y * -0.13).toFixed(2) + 'px');
+    logo.classList.toggle('is-magnetic', active);
+  }
+
+  function resetLogo(logo) {
+    setLogoVars(logo, 0, 0, false);
+  }
+
+  logos.forEach(function (logo) {
+    logo.classList.add('magnetic-logo');
+
+    logo.addEventListener('pointermove', function (event) {
+      if (event.pointerType && event.pointerType !== 'mouse') return;
+
+      var rect = logo.getBoundingClientRect();
+      var halfWidth = rect.width / 2;
+      var halfHeight = rect.height / 2;
+      var x = ((event.clientX - rect.left) - halfWidth) / halfWidth;
+      var y = ((event.clientY - rect.top) - halfHeight) / halfHeight;
+
+      setLogoVars(logo, x * 5, y * 6, true);
+    });
+
+    logo.addEventListener('pointerleave', function () {
+      resetLogo(logo);
+    });
+
+    logo.addEventListener('blur', function () {
+      resetLogo(logo);
+    });
+
+    logo.addEventListener('focus', function () {
+      logo.classList.add('is-magnetic');
+    });
+  });
+})();
+
+(function () {
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reducedMotion.matches) return;
+
+  var target = { x: 72, y: 18 };
+  var current = { x: target.x, y: target.y };
+  var frame = null;
+
+  function tick() {
+    current.x += (target.x - current.x) * 0.08;
+    current.y += (target.y - current.y) * 0.08;
+
+    document.documentElement.style.setProperty('--ambient-x', current.x.toFixed(2) + '%');
+    document.documentElement.style.setProperty('--ambient-y', current.y.toFixed(2) + '%');
+
+    if (Math.abs(target.x - current.x) > 0.02 || Math.abs(target.y - current.y) > 0.02) {
+      frame = window.requestAnimationFrame(tick);
+    } else {
+      frame = null;
+    }
+  }
+
+  function requestAmbientUpdate() {
+    if (frame !== null) return;
+    frame = window.requestAnimationFrame(tick);
+  }
+
+  window.addEventListener('pointermove', function (event) {
+    if (event.pointerType && event.pointerType !== 'mouse') return;
+
+    target.x = (event.clientX / Math.max(window.innerWidth, 1)) * 100;
+    target.y = (event.clientY / Math.max(window.innerHeight, 1)) * 100;
+    requestAmbientUpdate();
+  }, { passive: true });
+})();

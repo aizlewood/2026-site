@@ -4,14 +4,20 @@ Title: Colophon
 
 Text: 
 
-This site is powered by the excellent [Kirby CMS](http://getkirby.com).  
+This site was redesigned and redeveloped in **Summer 2026**, made using a combination of good old fashioned, manual CSS and HTML pair-programmed with [OpenAI's Codex](https://openai.com/codex/). 
 
-It was developed using Sass, [Koala](http://koala-app.com/) and coded in [Sublime](https://www.sublimetext.com/3).  Most images have been optimised using [JPEGMini](https://www.jpegmini.com) or [ImageOptim](https://imageoptim.com/mac).
+The site is powered by the excellent [Kirby CMS](http://getkirby.com) (*PHP FTW*).  Most images have been optimised using [ImageOptim](https://imageoptim.com/mac). It was made to be as performant and accessible as possible.
 
-The early design explorations were done using the wonderful [Sketch app](http://sketchapp.com) (though I now use [Figma](https://www.figma.com/)), and the majority was done in the browser, using the great  [kompact](https://gum.co/kompact) theme by [Joro Yordanov](https://twitter.com/yordanoff) as the base. 
+The early design explorations were done in Figma, not AI, and the remainder was done in the browser.
 
-The site is typeset in **[Manrope](https://fonts.google.com/specimen/Manrope)** and **[Bitter](https://fonts.google.com/specimen/Bitter)**, both Variable fonts , found on [Google Fonts](https://fonts.google.com/).  
+The site is typeset in **[Cabinet Grotesk](https://www.fontshare.com/fonts/cabinet-grotesk)** by [Indian Type Foundry](https://www.indiantypefoundry.com/) and **[Figtree](https://fonts.google.com/specimen/Figtree)**, by [Erik Kennedy](https://www.erikdkennedy.com/projects/figtree.html).  
 
-I've recently updated my typographic scale using [Utopia.fyi](https://utopia.fyi/), made by [James Gilyead](https://twitter.com/j98) & [Trys Mudford](https://twitter.com/trysmudford).
+You can [view a rudimentary styleguide here](/colophon/styleguide "Styleguide").
 
-You can view a rudimentary styleguide [here](/colophon/styleguide "Styleguide").
+----
+
+Badge: 
+
+----
+
+Feeddate: 
