@@ -46,4 +46,4 @@ Feeddate: 2018-01-01
 
 ----
 
-Coverimage: 
+Coverimage: hero-rsa.jpg

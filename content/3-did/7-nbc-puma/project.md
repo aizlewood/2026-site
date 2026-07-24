@@ -76,7 +76,7 @@ Sector: Media
 
 ----
 
-Coverimage: puma-hero.png
+Coverimage: hero-nbc.jpg
 
 ----
 

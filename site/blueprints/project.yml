@@ -59,11 +59,23 @@ fields:
     type: checkboxes
     options:
       Visual Design: Visual design
+      Product Design: Product Design
+      UI: UI Design
+      Research: Research
       Branding: Branding
       UX: User Experience
       Front-End: Front-end development
       Integration: Back-end integration
       Consulting: Consulting
+      Design Director: Design Director
+      Creative Director: Creative Direction
+      Head of Design: Head of Design
+      UX direction: UX direction
+      Oversight: Oversight
+      Mentoring: Mentoring
+      Coaching: Coaching
+      Management: Management
+
 
   with:
     label: With
@@ -73,6 +85,7 @@ fields:
       ASquared: ASquared
       Freelance: Freelance
       Self: Self
+      Other: Other
 
   year:
     label: Year

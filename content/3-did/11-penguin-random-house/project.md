@@ -82,7 +82,7 @@ Sector: Publishing
 
 ----
 
-Coverimage: prh-hero.png
+Coverimage: hero-prh.jpg
 
 ----
 

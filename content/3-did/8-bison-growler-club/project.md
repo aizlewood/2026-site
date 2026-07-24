@@ -70,7 +70,7 @@ Sector: Retail
 
 ----
 
-Coverimage: bison-hero.png
+Coverimage: hero-bison.jpg
 
 ----
 

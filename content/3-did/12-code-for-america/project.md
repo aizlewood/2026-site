@@ -75,7 +75,7 @@ Sector: Charities
 
 ----
 
-Coverimage: cfa-hero.png
+Coverimage: hero-cfa.jpg
 
 ----
 

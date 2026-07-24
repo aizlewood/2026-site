@@ -119,7 +119,7 @@ This case study was originally (link: https://clearleft.com/work/piloting-an-exp
 
 ----
 
-Coverimage: vh-hero.png
+Coverimage: hero-vh.jpg
 
 ----
 

@@ -92,7 +92,7 @@ Sector: Education
 
 ----
 
-Coverimage: pearson-hero.png
+Coverimage: hero-pulse.jpg
 
 ----
 

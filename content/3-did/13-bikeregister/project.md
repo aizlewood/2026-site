@@ -40,13 +40,14 @@ Text:
 
 BikeRegister came to Clearleft looking to redesign their existing site while refining and optimising their registration flow. They also wanted a pattern library of code and assets that they could re-use and build upon in the future.  The project required a quick delivery and direct liaising with their internal development team in order to launch the new site - complete with new branding as echoed in their forthcoming product packaging - as soon as possible.
 
-(image: iphone5s.png class: normal-size no-shadow)
-(image: Large screen - home.png class: normal-size)
-(image: Large screen - reg flow prods.png class: normal-size)
-(image: Large screen - reg flow billing.png class: normal-size)
-(image: Subpage generic testimonials.png class: normal-size)
+(image: iphone5s.png)
+(image: Large screen - home.png)
 
-(image: Small screen - home.png class: normal-size)
+(image: Large screen - reg flow prods.png class: half)
+(image: Large screen - reg flow billing.png class: half last)
+
+(image: Subpage generic testimonials.png class: half)
+(image: Small screen - home.png class: half last)
 
 ----
 
@@ -54,7 +55,7 @@ Sector: Retail
 
 ----
 
-Coverimage: br-hero.png
+Coverimage: hero-bikeregister.jpg
 
 ----
 
