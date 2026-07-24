@@ -1,5 +1,13 @@
 <?php snippet('header') ?>
 
+<?php
+  $coverFilename = trim($page->coverimage()->value());
+  $coverImage = $coverFilename !== '' ? $page->image($coverFilename) : null;
+  if(!$coverImage && $page->image()) {
+    $coverImage = $page->image();
+  }
+?>
+
 <div class="wrap-fluid">
 
       <a class="project-back" href="<?= url('did') ?>">&larr; All Work</a>
@@ -14,7 +22,7 @@
             <h1><?php echo $page->lede()->html() ?></h1>
         </header>
 
-        <?php if($image = $page->image()): ?>
+        <?php if($image = $coverImage): ?>
         <figure class="full-bleed">
             <?php snippet('responsive-image', array(
               'image' => $image,
@@ -29,8 +37,8 @@
 
         <?php snippet('entry-meta', array('page' => $page, 'showBadge' => false, 'showDate' => false)); ?>
 
-          <details class="project-meta-disclosure">
-            <summary>Project details</summary>
+          <section class="project-meta" aria-labelledby="project-meta-title">
+            <h2 class="project-meta__title" id="project-meta-title">Project details</h2>
             <ul class="meta" aria-label="Project meta">
               <li><span class="meta-label"><abbr title="How Might We">HMW</abbr></span><span class="meta-value"><?php echo $page->summary()->html() ?></span></li>
               <li><span class="meta-label">Sector</span><span class="meta-value"><?php echo $page->sector()->html() ?></span></li>
@@ -41,7 +49,7 @@
               <li><span class="meta-label">Link</span><span class="meta-value"><a href="<?php echo $page->website()->html() ?>">See it live &rarr;</a></span></li>
 <?php endif ?>
             </ul>
-          </details>
+          </section>
 
           <section class="project-content">
             <?= function_exists('render_rich_text') ? render_rich_text($page->text(), $page) : $page->text()->kirbytext() ?>

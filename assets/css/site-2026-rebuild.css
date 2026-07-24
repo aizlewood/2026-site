@@ -20,6 +20,8 @@
   --color-link-hover: #0038bd;
   --color-link-visited: #6544bd;
   --color-focus: #075cff;
+  --ambient-x: 72%;
+  --ambient-y: 18%;
 
   --type-quote: clamp(1.4238rem, 1.211rem + 0.9458vw, 1.944rem);
   --type-tiny: clamp(0.5813rem, 0.6736rem + 0.0341vw, 0.65rem);
@@ -118,6 +120,15 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+
+  .magnetic-logo,
+  .magnetic-logo .filled,
+  .magnetic-logo .outline {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
+
 }
 
 *,
@@ -137,7 +148,15 @@ html {
 body {
   min-width: 20rem;
   margin: 0;
-  background: var(--color-canvas);
+  background:
+    radial-gradient(circle at var(--ambient-x) var(--ambient-y),
+      color-mix(in srgb, var(--badge-sky-bg) 62%, transparent) 0,
+      color-mix(in srgb, var(--badge-mint-bg) 32%, transparent) 18rem,
+      transparent min(42rem, 76vw)),
+    linear-gradient(135deg,
+      color-mix(in srgb, var(--color-canvas) 96%, var(--badge-amber-bg)),
+      var(--color-canvas) 48%,
+      color-mix(in srgb, var(--color-canvas) 94%, var(--badge-indigo-bg)));
   color: var(--color-ink);
   font-family: var(--font-sans);
   font-size: var(--type-body);
@@ -258,6 +277,10 @@ tbody td:nth-child(5) {
 
 tbody tr:hover {
   background-color: var(--badge-yellow-bg);
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color s ease;
+  transition: background-color 0.45s ease;
 }
 
 /* Components: embedded media and shared interactions */
@@ -282,34 +305,7 @@ tbody tr:hover {
 
 .hero__logo:hover,
 .logo:hover {
-  animation: logo-wave 0.9s ease-in-out;
-  transform-origin: 60% 20%;
-}
-
-@keyframes logo-wave {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  22% {
-    transform: rotate(-9deg);
-  }
-
-  44% {
-    transform: rotate(7deg);
-  }
-
-  62% {
-    transform: rotate(-5deg);
-  }
-
-  78% {
-    transform: rotate(3deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
+  animation: none;
 }
 
 a {
@@ -330,6 +326,10 @@ a:hover {
 
 #container a:hover {
   background-color: var(--badge-amber-bg);
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color s ease;
+  transition: background-color 0.45s ease;
 }
 
 #container a.pagination__item:hover,
@@ -388,6 +388,45 @@ a:hover {
 main,
 #container {
   width: 100%;
+}
+
+.magnetic-logo {
+  --logo-x: 0px;
+  --logo-y: 0px;
+  --logo-tilt: 0deg;
+  --logo-fill-x: 0px;
+  --logo-fill-y: 0px;
+  --logo-outline-x: 0px;
+  --logo-outline-y: 0px;
+  position: relative;
+  display: inline-flex;
+  transform: translate3d(var(--logo-x), var(--logo-y), 0) rotate(var(--logo-tilt));
+  transform-origin: 58% 32%;
+  transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.magnetic-logo svg {
+  display: block;
+  overflow: visible;
+}
+
+.magnetic-logo .filled,
+.magnetic-logo .outline {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition:
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.magnetic-logo .filled {
+  transform: translate3d(var(--logo-fill-x), var(--logo-fill-y), 0);
+}
+
+.magnetic-logo .outline {
+  transform: translate3d(var(--logo-outline-x), var(--logo-outline-y), 0);
+  opacity: 0.76;
 }
 
 .wrap-fluid {
@@ -715,6 +754,7 @@ blockquote {
 .intro figure.full-bleed img,
 .intro figure.pull-left img,
 .intro figure.pull-right img,
+.project-detail figure.full-bleed img,
 .project-content figure.breakout img,
 .project-content figure.full-bleed img,
 .project-content figure.pull-left img,
@@ -1280,7 +1320,7 @@ figcaption {
 
 .content-page>.text,
 .work-page>.text {
-  max-width: 42rem;
+  /* max-width: 42rem; */
 }
 
 .content-page,
@@ -1377,32 +1417,24 @@ figcaption {
 }
 
 .two-column-section__aside {
-  /* width: min(calc(100vw - (2 * var(--page-gutter))), 94%); */
   margin-inline: auto;
 }
 
 /* About page */
 
 .about-page .current-status {
-  margin: 4.5rem auto 2.5rem auto;
-  padding: 1rem 2rem 5rem 2rem;
   background-color: var(--color-masthead);
   color: var(--color-paper);
   position: relative;
-  max-width: 50%;
+  max-width: 96%;
 }
 
 .about-page .two-column-section .current-status {
-  margin: clamp(2.5rem, 5vw, 4rem) auto 0;
-}
-
-.about-page .current-status::before {
-  content: "My current status 🚀";
-  text-transform: capitalize;
-  position: absolute;
-  z-index: 1001;
-  top: -30px;
-  left: 30px;
+  padding: 5rem;
+  margin: clamp(2.5rem, 5vw, 8rem) auto 0;
+  border: 1px solid var(--color-muted);
+  border-radius: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .about-page .current-status p {
@@ -1642,10 +1674,18 @@ figcaption {
   min-height: 100%;
   padding: 2.5rem 1.5rem;
   color: var(--color-ink);
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color s ease;
+  transition: background-color 0.45s ease;
 }
 
 #container .services-carousel__card-link:hover {
-  background: var(--badge-amber-bg);
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color s ease;
+  transition: background-color 0.45s ease;
+  background: var(--badge-indigo-bg);
   border-radius: 1rem;
   text-decoration-line: none;
 
@@ -1749,6 +1789,10 @@ figcaption {
   color: var(--color-ink);
   font-size: var(--type-body);
   line-height: var(--lh-subtitle);
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color s ease;
+  transition: background-color 0.45s ease;
 }
 
 .work-slat:visited,
@@ -1957,9 +2001,14 @@ figcaption {
   color: var(--color-ink);
 }
 
-.bike-page,
-.project-detail {
+.bike-page {
   width: min(calc(100% - (2 * var(--page-gutter))), var(--prose-rail));
+}
+
+.project-detail,
+.capability-page {
+  width: min(100%, var(--prose-rail));
+  margin-inline: auto;
 }
 
 .article--bike {
@@ -2023,10 +2072,6 @@ figcaption {
   font: inherit;
 }
 
-.project-detail {
-  margin-inline: auto;
-}
-
 .project-nav-separator {
   margin-top: 0;
 }
@@ -2043,27 +2088,28 @@ figcaption {
   margin-bottom: 1.5rem;
 }
 
-.project-meta-disclosure {
+.project-meta {
   margin: 2rem 0;
   border-top: 1px solid var(--color-rule);
   border-bottom: 1px solid var(--color-rule);
 }
 
-.project-meta-disclosure summary {
+.project-meta__title {
+  margin: 0;
   padding: 1rem 0;
-  cursor: pointer;
-  font-size: var(--type-sm);
+  font-size: var(--type-h5);
   font-weight: 600;
+  line-height: var(--lh-body);
 }
 
-.project-meta-disclosure .meta {
+.project-meta .meta {
   display: grid;
   margin: 0;
   padding: 0 0 1rem;
   list-style: none;
 }
 
-.project-meta-disclosure .meta li {
+.project-meta .meta li {
   display: grid;
   grid-template-columns: 5rem 1fr;
   gap: 1rem;
@@ -2101,8 +2147,17 @@ figcaption {
   margin: 2rem 0;
 }
 
+.project-content figure.normal-size,
+.project-content figure.center {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: 0;
+  transform: none;
+}
+
 .project-detail>figure.full-bleed,
-.project-content figure.full-bleed {
+.project-content figure.full-bleed,
+.capability-page .capability-page__media {
   width: min(calc(100vw - (2 * var(--page-gutter))), var(--wide-rail));
   max-width: none;
   margin-inline: 50%;
@@ -2111,6 +2166,13 @@ figcaption {
 
 .project-content img {
   width: 100%;
+}
+
+.project-content figure.no-shadow img {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 /* Books */
@@ -2225,6 +2287,10 @@ figcaption {
 @media (min-width: 48rem) {
   .two-column-section--split .two-column-section__inner {
     grid-template-columns: minmax(0, 2.0fr) minmax(0, 1.0fr);
+  }
+
+  .about-page .current-status {
+    max-width: 70%;
   }
 
   .services-carousel__header {
@@ -2447,6 +2513,10 @@ figcaption {
     place-items: center;
     padding: 1rem;
     grid-gap: 0px;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -o-transition: background-color s ease;
+    transition: background-color 0.45s ease;
   }
 
   .client-logo:nth-child(n+2) {
@@ -2465,6 +2535,13 @@ figcaption {
     border-top: 1px solid var(--color-rule-light);
   }
 
+  .client-logo:hover {
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -o-transition: background-color s ease;
+    transition: background-color 0.45s ease;
+    background-color: var(--color-paper);
+  }
 
   .services-carousel__track {
     grid-auto-columns: clamp(20rem, 31vw, 23rem);
