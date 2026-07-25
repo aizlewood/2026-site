@@ -16,25 +16,14 @@ RewriteEngine on
 	#
 	# RewriteBase /mysite
 
-	# In some enviroments it's necessary to
-	# set the RewriteBase to:
-	#
-RewriteBase /kirby
+		# Set RewriteBase only when the site is deployed in a subfolder.
+		# RewriteBase /
 
-	# Force to omit www in URL (should work for https as well)
-# RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-# RewriteRule ^(.*)$ http://%1$1 [R=301,L]
-
-# RewriteCond %{SERVER_PORT} !=443
-# RewriteRule ^(.*)$ https://jonaizlewood.com/$1 [R=301,L]
-
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-
-RewriteCond %{HTTPS} on
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+		# Force HTTPS and omit www.
+	RewriteCond %{HTTPS} !=on [OR]
+	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+	RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L,NE]
 
 	# block files and folders beginning with a dot, such as .git
 	# except for the .well-known folder, which is used for Let's Encrypt and security.txt
@@ -91,6 +80,10 @@ ExpiresByType image/webp "access plus 1 year"
 </IfModule>
 
 <IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
 <FilesMatch "\.(css|js|woff2|jpg|jpeg|png|gif|svg|webp)$">
 Header set Cache-Control "public, max-age=31536000"
 </FilesMatch>

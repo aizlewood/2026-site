@@ -4,7 +4,7 @@
 <footer class="footer-band">
   <div class="wrap-fluid">
     <div class="cta" aria-label="Site note">
-      <span class="cta__logo"><img src="<?= url('assets/images/jra-avatar.png') ?>"></span>
+      <span class="cta__logo"><img src="<?= url('assets/images/jra-avatar.png') ?>" alt="" loading="lazy" decoding="async"></span>
       <p><strong>Jon Aizlewood</strong><br>Made with ❤️, ⏳, ☕️ and a bit of 🤖 in the South Downs, Sussex-by-the-sea 🌊.</p>
     </div>
 

@@ -1,0 +1,17 @@
+{
+  "name": "Jon Aizlewood",
+  "short_name": "Jon Aizlewood",
+  "description": "Design and product leadership by Jon Aizlewood.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#f7f4ec",
+  "theme_color": "#1f1f1f",
+  "icons": [
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
