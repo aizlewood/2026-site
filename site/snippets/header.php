@@ -2,57 +2,12 @@
 <?php
 $stylesheetPath = kirby()->roots()->assets() . DS . 'css' . DS . 'site-2026-rebuild.css';
 $stylesheetVersion = is_file($stylesheetPath) ? filemtime($stylesheetPath) : time();
-
-$metaFieldValue = function($page, $fields) {
-  foreach ((array)$fields as $field) {
-    $value = trim((string)$page->$field()->value());
-    if ($value !== '') {
-      return $value;
-    }
-  }
-  return '';
-};
-
-$metaExcerpt = function($value, $fallback = '') {
-  $text = trim(strip_tags(kirbytext($value)));
-  $text = preg_replace('/\s+/', ' ', $text);
-  if ($text === '') {
-    $text = $fallback;
-  }
-  if (function_exists('mb_strlen') && function_exists('mb_substr') && mb_strlen($text, 'UTF-8') > 155) {
-    return rtrim(mb_substr($text, 0, 152, 'UTF-8')) . '...';
-  }
-  if (strlen($text) > 155) {
-    return rtrim(substr($text, 0, 152)) . '...';
-  }
-  return $text;
-};
-
-$metaSource = $metaFieldValue($page, array('description', 'summary', 'lede', 'intro', 'text'));
-$metaDescription = $metaExcerpt($metaSource, (string)$site->description());
-$metaTitle = $page->isHomePage() ? (string)$site->title() : (string)$page->title() . ' | ' . (string)$site->title();
-$metaUrl = $page->url();
-$metaImage = url('assets/images/og.png');
-$metaType = in_array((string)$page->template(), array('article', 'project')) ? 'article' : 'website';
 ?>
 <html lang="<?= $site->language() ? $site->language()->code() : 'en' ?>">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="<?= html($metaDescription) ?>">
-  <title><?= html($metaTitle) ?></title>
-  <link rel="canonical" href="<?= html($metaUrl) ?>">
-  <meta property="og:site_name" content="<?= $site->title()->html() ?>">
-  <meta property="og:type" content="<?= html($metaType) ?>">
-  <meta property="og:title" content="<?= html($metaTitle) ?>">
-  <meta property="og:description" content="<?= html($metaDescription) ?>">
-  <meta property="og:url" content="<?= html($metaUrl) ?>">
-  <meta property="og:image" content="<?= html($metaImage) ?>">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="<?= html($metaTitle) ?>">
-  <meta name="twitter:description" content="<?= html($metaDescription) ?>">
-  <meta name="twitter:image" content="<?= html($metaImage) ?>">
-  <link rel="manifest" href="<?= url('site.webmanifest') ?>">
+<?php snippet('head-meta') ?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="<?= url('assets/fonts/CabinetGrotesk-Variable.woff2') ?>" as="font" type="font/woff2" crossorigin>

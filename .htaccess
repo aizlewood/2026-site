@@ -19,11 +19,12 @@ RewriteEngine on
 		# Set RewriteBase only when the site is deployed in a subfolder.
 		# RewriteBase /
 
-		# Force HTTPS and omit www.
+		# Force HTTPS and omit www on production only; leave local dev hosts alone.
+	RewriteCond %{HTTP_HOST} !^(?:localhost|127\.0\.0\.1)(?::\d+)?$ [NC]
+	RewriteCond %{HTTP_HOST} ^(?:www\.)?jonaizlewood\.com$ [NC]
 	RewriteCond %{HTTPS} !=on [OR]
-	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-	RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
-	RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L,NE]
+	RewriteCond %{HTTP_HOST} ^www\. [NC]
+	RewriteRule ^ https://jonaizlewood.com%{REQUEST_URI} [R=301,L,NE]
 
 	# block files and folders beginning with a dot, such as .git
 	# except for the .well-known folder, which is used for Let's Encrypt and security.txt
