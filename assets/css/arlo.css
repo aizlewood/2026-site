@@ -1,0 +1,103 @@
+/* Site integration; the Arlo project owns arlo-source.css. */
+.arlo-page header {
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  padding-block: 20px;
+}
+
+.arlo-page .wordmark {
+  font-size: 32px;
+}
+
+.arlo-page .status {
+  margin-right: auto;
+}
+
+.arlo-return a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--ink);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.arlo-return a:hover {
+  color: var(--muted);
+}
+
+.arlo-page a:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 4px;
+}
+
+.arlo-skip {
+  position: fixed;
+  z-index: 1;
+  top: 12px;
+  left: 16px;
+  padding: 12px 16px;
+  background: var(--signal);
+  color: var(--ink);
+  transform: translateY(-180%);
+}
+
+.arlo-skip:focus {
+  transform: translateY(0);
+}
+
+.arlo-page .hero {
+  min-height: 0;
+  padding-block: 64px;
+}
+
+.arlo-page #interest {
+  scroll-margin-top: 24px;
+}
+
+.arlo-page footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 820px) {
+  .arlo-page .process li:nth-child(3) {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .arlo-page header {
+    gap: 4px 20px;
+    padding-block: 16px;
+  }
+
+  .arlo-page .status {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .arlo-page header .arlo-return {
+    flex-basis: 100%;
+  }
+
+  .arlo-page .hero {
+    padding-block: 40px 48px;
+  }
+
+  .arlo-page h1 {
+    font-size: 38px;
+  }
+
+  .arlo-page .eyebrow {
+    margin-bottom: 24px;
+  }
+
+  .arlo-page .process li:nth-child(3) {
+    padding: 28px 0;
+  }
+}
