@@ -14,17 +14,39 @@
     </article>
 </div>
 
-<div class="wrap-fluid work-slats-wrap">
-    <article class="article index">
-        <section class="work-slats" aria-label="Case studies">
-            <?php foreach($page->children()->visible() as $subitem): ?>
-                <a class="work-slat" href="<?= $subitem->url() ?>">
-                    <span class="work-slat__title"><?= $subitem->title()->html() ?></span>
-                    <span class="work-slat__arrow" aria-hidden="true">&rarr;</span>
-                </a>
-            <?php endforeach ?>
-        </section>
-    </article>
+<div class="wrap-full work-grid-wrap">
+    <section class="work-grid" aria-label="Case studies">
+        <?php foreach($page->children()->visible()->filterBy('template', 'project') as $subitem): ?>
+            <?php
+              $coverFilename = trim((string)$subitem->coverimage()->value());
+              $coverImage = $coverFilename !== '' ? $subitem->image($coverFilename) : null;
+              if(!$coverImage) $coverImage = $subitem->image();
+            ?>
+            <a class="work-card" href="<?= $subitem->url() ?>">
+                <span class="work-card__media<?php e(!$coverImage, ' work-card__media--empty') ?>">
+                    <?php if($coverImage): ?>
+                        <?php snippet('responsive-image', array(
+                          'image' => $coverImage,
+                          'alt' => '',
+                          'sizes' => '(min-width: 760px) 46vw, 94vw',
+                          'widths' => array(480, 720, 960, 1280)
+                        )) ?>
+                    <?php else: ?>
+                        <span class="work-card__monogram" aria-hidden="true"><?= $subitem->title()->html() ?></span>
+                    <?php endif ?>
+                </span>
+                <span class="work-card__caption">
+                    <span class="work-card__title"><?= $subitem->title()->html() ?></span>
+                    <span class="work-card__arrow" aria-hidden="true">&rarr;</span>
+                </span>
+            </a>
+        <?php endforeach ?>
+    </section>
+    <?php foreach($page->children()->visible() as $subitem): ?>
+        <?php if($subitem->template() != 'project'): ?>
+            <p class="work-grid-more"><a href="<?= $subitem->url() ?>"><?= $subitem->title()->html() ?> &rarr;</a></p>
+        <?php endif ?>
+    <?php endforeach ?>
 </div>
 
 <?php snippet('footer') ?>
