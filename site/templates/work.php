@@ -21,8 +21,12 @@
               $coverFilename = trim((string)$subitem->coverimage()->value());
               $coverImage = $coverFilename !== '' ? $subitem->image($coverFilename) : null;
               if(!$coverImage) $coverImage = $subitem->image();
+              $headline = trim((string)$subitem->lede()->value());
+              if($headline === '') $headline = trim((string)$subitem->summary()->value());
+              if($headline === '') $headline = (string)$subitem->title()->value();
             ?>
             <a class="work-card" href="<?= $subitem->url() ?>">
+                <span class="work-card__client"><?= $subitem->title()->html() ?></span>
                 <span class="work-card__media<?php e(!$coverImage, ' work-card__media--empty') ?>">
                     <?php if($coverImage): ?>
                         <?php snippet('responsive-image', array(
@@ -36,7 +40,7 @@
                     <?php endif ?>
                 </span>
                 <span class="work-card__caption">
-                    <span class="work-card__title"><?= $subitem->title()->html() ?></span>
+                    <span class="work-card__title"><?= html($headline) ?></span>
                     <span class="work-card__arrow" aria-hidden="true">&rarr;</span>
                 </span>
             </a>

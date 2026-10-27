@@ -1790,6 +1790,19 @@ figcaption {
   text-decoration: none;
 }
 
+.work-card__client {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--color-ink-soft);
+  font-size: 1rem;
+}
+
+.work-card__title {
+  max-width: 28ch;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  line-height: 1.15;
+}
+
 .work-card__media {
   display: flex;
   align-items: center;
@@ -1826,6 +1839,7 @@ figcaption {
 }
 
 .work-card__arrow {
+  flex-shrink: 0;
   padding-right: 0.4rem;
   transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
 }
